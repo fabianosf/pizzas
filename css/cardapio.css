@@ -1,0 +1,22 @@
+ 
+
+h1 {
+    margin: 50px;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: blue;
+}
+
+body {
+    background-image: url('../img/cad.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}

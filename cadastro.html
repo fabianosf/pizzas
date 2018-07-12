@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Cadastro de Clientes</title>
+		 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />		
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/cardapio.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-notify.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mask.min.js"></script>		
+		<script type="text/javascript">
+		 
+		function confirmar(){			
+			$.notify({
+				title: '<strong>Sucesso!</strong>',
+				message: 'Seu cadastro foi realizado com sucesso.',
+				offset: 50
+			},{
+				type: 'success'
+			});			
+			return false
+			
+		}
+		</script>
+	</head>
+	<body>
+		<h1>Cadastro de Clientes</h1>
+		 
+
+		<div class="container">
+			<form name="formCadastro" method="post" action="algumapagina.php" onsubmit="return confirmar()">
+				<div class="form-group">
+					<label>Nome</label>
+					<input type="text" name="nome" id="nome" placeholder="Nome" class="form-control" />
+				</div>
+
+				<div class="form-group">
+					<label>Endereço</label>
+					<input type="text" name="endereco" id="endereco" placeholder="endereço" class="form-control" />
+				</div>
+
+				<div class="form-group">
+					<label>Telefone</label>
+					<input type="number" name="nome" id="telefone" placeholder="(xx) xxxx-xxxx" class="form-control"/>
+				</div>
+
+
+
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="E-mail" />  
+				</div>
+
+
+				
+				<button type="submit" class="btn btn-primary">
+				  <span class="glyphicon glyphicon-send"></span>
+				  Salvar
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
